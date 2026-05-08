@@ -6,7 +6,7 @@ on:
 jobs:
   tests:
     runs-on: ubuntu-latest
-    
+
     services:
       postgres:
         image: postgres:15
@@ -35,7 +35,7 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: run pipeline code
-        runs: python test_postgres.py
+        run: python test_postgres.py
 
       - name: Run tests
         run: pytest .
