@@ -162,6 +162,10 @@ with engine.begin() as conn:
         FROM clean_orders
     """))
 
+    get_rows_clean_orders = conn.execute(text("""
+        SELECT COUNT(*) FROM clean_orders;
+    """))
+
     query_clean_orders = conn.execute(text("SELECT COUNT(*) FROM clean_orders;"))
     query_rejected_orders = conn.execute(text("SELECT COUNT(*) FROM rejected_orders;"))
     query_city_revenue = conn.execute(text("SELECT * FROM city_revenue;"))
@@ -176,5 +180,6 @@ with engine.begin() as conn:
 # print([{'city': d.city, 'total_amount': d.total_amount, 'rank': d.revenue_rank} for d in dense_rank_cities_by_revenue])
 # print([{'city': d.city, 'total_amount': d.total_amount, 'rank': d.revenue_rank} for d in row_rank_cities_by_revenue])
 # print([{'customer_name': d.customer_name, 'city': d.city, 'amount': d.amount, 'rank': d.city_rank} for d in rank_each_customer_by_city])
-print([d for d in previous_and_next_values])
-print([d for d in add_flag_column])
+#print([d for d in previous_and_next_values])
+#print([d for d in add_flag_column])
+print(get_rows_clean_orders.scalar())
