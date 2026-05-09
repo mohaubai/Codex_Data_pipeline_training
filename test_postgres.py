@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, text
 import pandas
 
-engine = create_engine("postgresql+psycopg://postgres:postgres@localhost:5433/postgres")
+engine = create_engine("postgresql+psycopg://postgres:postgres@postgres:5433/postgres")
 
 df = pandas.read_csv('./orders.csv')
 df['order_date'] = pandas.to_datetime(df['order_date'], errors='coerce')
