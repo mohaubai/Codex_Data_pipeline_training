@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: clean_orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: amount
+        tests:
+          - not_null

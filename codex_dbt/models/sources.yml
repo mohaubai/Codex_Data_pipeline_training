@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: codex_de
+    database: astral-hold-476511-j9
+    schema: codex_de
+    tables:
+      - name: raw_orders
