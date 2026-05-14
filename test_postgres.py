@@ -171,7 +171,7 @@ with engine.begin() as conn:
     query_city_revenue = conn.execute(text("SELECT * FROM city_revenue;"))
 
 #print("csv_orders table created")
-# print(query_clean_orders.scalar())
+print(query_clean_orders.scalar())
 #print(query_rejected_orders.scalar())
 # print([{"city":r.city, "total_amount": r.total_amount, "total_count": r.total_rows} for r in query_city_revenue])
 # print([{"amount": order.amount} for order in orders_greater_than_average])
@@ -182,4 +182,4 @@ with engine.begin() as conn:
 # print([{'customer_name': d.customer_name, 'city': d.city, 'amount': d.amount, 'rank': d.city_rank} for d in rank_each_customer_by_city])
 #print([d for d in previous_and_next_values])
 #print([d for d in add_flag_column])
-print(get_rows_clean_orders.scalar())
+#print(get_rows_clean_orders.scalar())

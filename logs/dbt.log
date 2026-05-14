@@ -1,0 +1,31 @@
+[0m22:42:27.144309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aeb645666f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aeb64c1d130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aeb6452aba0>]}
+
+
+============================== 22:42:27.151388 | 2fd9716c-40b2-4689-88b3-05c38696a3dc ==============================
+[0m22:42:27.151388 [info ] [MainThread]: Running with dbt=1.11.9
+[0m22:42:27.152920 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'empty': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_path': 'logs', 'profiles_dir': '/home/mubaid675/.dbt', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'partial_parse': 'True', 'warn_error': 'None', 'quiet': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'no_print': 'None', 'invocation_command': 'dbt init codex_dbt', 'cache_selected_only': 'False', 'log_cache_events': 'False'}
+[0m22:42:27.192236 [info ] [MainThread]: Creating dbt configuration folder at /home/mubaid675/.dbt
+[0m22:42:27.194849 [debug] [MainThread]: Starter project path: /home/mubaid675/.local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m22:42:27.200495 [info ] [MainThread]: 
+Your new dbt project "codex_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:42:27.201625 [info ] [MainThread]: Setting up your profile.
+[0m22:45:37.566604 [info ] [MainThread]: Profile codex_dbt written to /home/mubaid675/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:45:37.569348 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 190.53114, "process_in_blocks": "544", "process_kernel_time": 0.555347, "process_mem_max_rss": "216416", "process_out_blocks": "80", "process_user_time": 4.755962}
+[0m22:45:37.571397 [debug] [MainThread]: Command `dbt init` succeeded at 22:45:37.571119 after 190.53 seconds
+[0m22:45:37.572280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aeb62972180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aeb4a32de80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aeb49f3d9d0>]}
+[0m22:45:37.573170 [debug] [MainThread]: Flushing usage events
+[0m22:45:37.734577 [debug] [MainThread]: An error was encountered while trying to flush usage events
